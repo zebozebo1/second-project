@@ -1,0 +1,443 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@font-face {
+  font-family: Rubik;
+  src: url(../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(../assets/fonts/Pacifico/Pacifico.ttf);
+}
+
+:root {
+  --color-nav: #59564f;
+  --color-heading: rgb(65, 77, 77);
+  --color-primary: rgb(86, 102, 102);
+  --color-secondary: rgb(61, 97, 119);
+  --color-button: rgb(252, 254, 255);
+  --color-icon: #3D6177;
+
+
+  --background-navbar: #e0eeee;
+  --background-section: rgba(197, 221, 221, 0.5);
+  --background-footer: #c5dddd;
+
+  --font-size-heading-01: 5.6rem;
+  --font-size-heading-02: 4.2rem;
+  --font-size-main-text: 1.8rem;
+  --font-size-small-text: 1.6rem;
+
+  --font-family-primary: Rubik, sans-serif;
+  --font-family-logo: Pacifico, sans-serif;
+}
+
+/* Universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+/* responsive img qilish uchun */
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.nav{
+    background-color: var(--background-navbar);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+.navbar-left .logo{
+    font-family: var(--font-family-logo);
+    font-size: 2.2rem;
+    color: var(--color-icon);
+    
+}
+.navbar-right{
+    display: flex;
+
+    gap: 15.7rem;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 5.6rem;
+}
+.nav-links a{
+    color: var(--color-nav);
+    font-size: var(--font-size-small-text);
+    transition: 0.4s ease-in-out;
+
+}
+.nav-links a:hover{
+    font-weight: 600;
+}
+.nav-social-networks{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+.nav-social-networks i{
+    color: var(--color-icon);
+    font-size: var(--font-size-main-text);
+    transition: 0.2s ease-in;
+}
+.nav-social-networks i:hover{
+color: var(--color-primary);
+}
+/* intro */
+.intro{
+    padding: 18.4rem 0 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+    
+}
+.intro h1{
+    font-size: var(--font-size-heading-01);
+    color: var(--color-heading);
+    max-width: 89rem;
+    text-align: center;
+}
+.intro form{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+}
+.intro input[type="email"]{
+    width: 56rem;
+    padding: 3.8rem 24rem 3.8rem 3.2rem;
+    border-radius: 24px;
+    font-size: var(--font-size-main-text);
+    color: var(--color-primary);
+
+}
+.intro input[type="button"]{
+    padding: 2.2rem 5.5rem;
+    background-color: var(--color-icon);
+    color: var(--color-button);
+    font-size: var(--font-size-main-text);
+    border: none;
+    border-radius: 16px;
+    /* margin-left: 216px; */
+
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+}
+/* main */
+/* company-logos */
+
+#company-logos{
+    max-width: 96rem;
+display: flex;
+justify-content: space-between;
+
+}
+/* revies */
+#reviews{
+    background-color: var(--background-section);
+    padding: 9.5rem 0;
+    margin-top: 12.8rem;
+
+}
+.reviews-text{
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-primary);
+}
+.review-author{
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 2.4rem;
+}
+.review-author h5{
+    font-size: 2.2rem;
+    font-weight: 600;
+color: var(--color-primary);
+}
+.review-author p{
+    font-size: var(--font-size-small-text);
+    color: var(--color-primary);
+
+}
+/* why us */
+#whyUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12.8rem;
+
+}
+.whyus-content h2{
+font-weight: 600;
+font-size: var(--font-size-heading-02);
+color: var(--color-heading);
+
+}
+.whyus-content > p{
+font-size: var(--font-size-main-text);
+line-height: 150%;
+color: var(--color-primary);
+max-width: 45rem;
+margin-top: 1.3rem;
+
+}
+.accardion-container{
+    max-width: 46.5rem;
+    margin-top: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+.accardion-item_head{
+    display: flex;
+    align-items: flex-end;
+
+    justify-content: space-between;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid #e6f2f2;
+    cursor: pointer;
+
+}
+.accardion-item_head h5{
+    font-size: var(--font-size-main-text);
+    color: var(--color-primary);
+
+
+}
+.accardion-item_head i{
+    font-size: var(--font-size-small-text);
+    color: var(--color-icon);
+    
+}
+.accardion-item_head p{
+    font-size: var(--font-size-small-text);
+    color: var(--color-primary);
+}
+
+.accardion-item:last-child .accardion-item_head{
+    border: none;
+    padding-bottom: 1.6rem;
+   
+} 
+.accardion-item:last-child i{
+    transform: rotate(180deg);
+}
+#issues{
+     
+    margin-top: 12.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    align-items: center;
+}
+.issues-content h2{
+    color: var(--color-heading);
+    font-size: var(--font-size-heading-02);
+    text-align: center;
+}
+.issues-content p{
+    margin-top: 1.6rem;
+    max-width: 78rem;
+    color: var(--color-primary);
+    font-size: var(--font-size-main-text);
+    line-height: 150%;
+    text-align: center;
+}
+.issues-cards{
+   display: flex;
+  column-gap: 2.4rem;
+   
+}
+.issue-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+}
+.card-imageBox{
+    position: relative;
+
+}
+.card-imageBox img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #C5DDDD;
+mix-blend-mode: color;
+    
+
+}
+.card-imageBox img{
+    filter: grayscale(1);
+    background: #C5DDDD;
+mix-blend-mode: color;
+} 
+.card-imageBox span{
+    padding: 1.2rem 2.4rem;
+    color: var(--color-heading);
+    font-size: 14px;
+    background-color: var(--background-footer);
+    border-radius: 12px;
+
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    
+
+}
+.card-content .card-title{
+    font-size: 2.2rem;
+    color: var(--color-heading);
+    
+}
+.card-content .card-link{
+    display: inline-block;
+    margin-top: 4rem;
+    color: var(--color-secondary);
+    font-size: var(--font-size-main-text);
+    font-weight: 600;
+    margin-bottom: 12.8rem;
+   
+    
+}
+#contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px 233px;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--background-section);
+  
+}
+#contact h2{
+    font-weight: 600;
+font-size: 56px;
+line-height: 66px;
+text-align: center;
+font-size: var(--font-size-heading-01);
+color: var(--color-heading);
+}
+#contact p{
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: var(--color-primary);
+font-size: var(--font-size-main-text);
+}
+#contact form{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#contact input[type="email"]{
+    width: 56rem;
+    padding: 3.8rem 24rem 3.8rem 3.2rem;
+    border-radius: 24px;
+    font-size: var(--font-size-main-text);
+    color: var(--color-primary);
+
+}
+#contact input[type="button"]{
+    padding: 2.2rem 5.5rem;
+    background-color: var(--color-icon);
+    color: var(--color-button);
+    font-size: var(--font-size-main-text);
+    border: none;
+    border-radius: 16px;
+    /* margin-left: 216px; */
+
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--background-footer);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footer-left a{
+    font-family: var(--font-family-logo);
+    font-size: 2.2rem;
+    color: var(--color-icon);
+    left: 128px;
+    
+}
+.footer-right{
+    display: flex;
+
+    gap: 15.7rem;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 5.6rem;
+}
+.nav-links a{
+    color: var(--color-nav);
+    font-size: var(--font-size-small-text);
+    transition: 0.4s ease-in-out;
+
+}
+.nav-links a:hover{
+    font-weight: 600;
+}
+.nav-social-networks{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    
+}
+.nav-social-networks i{
+    color: var(--color-icon);
+    font-size: var(--font-size-main-text);
+    transition: 0.2s ease-in;
+}
+.nav-social-networks i:hover{
+color: var(--color-primary);
+}
